@@ -7,7 +7,7 @@ public class WeatherCheck {
             System.out.println("Wear light but take a raincoat");
 
 
-        } else if (((25<=temperature) && (temperature>=20)) && currentlyRaining){
+        } else if (temperature >= 20 && temperature <= 25 && currentlyRaining){
             System.out.println("Wear light waterproof jacket");
 
         } else if (temperature<20 && currentlyRaining){
@@ -25,3 +25,6 @@ public class WeatherCheck {
 }
 
 // Reference https://web.stanford.edu/class/archive/cs/cs108/cs108.1082/106a-java-handouts/HO32IfBoolean.pdf
+// I realise my logic was not adequate for set a temperature between 2 different values according to stanford, so I ask ChatGPT
+// My original was if (((25<=temperature) && (temperature>=20)) && currentlyRaining) according to Stanford
+// According to chatGPT is how appears up.
